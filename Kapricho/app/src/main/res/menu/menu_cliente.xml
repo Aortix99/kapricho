@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pedidos_cliente"
+        android:icon="@drawable/ic_round_view_list_24"
+        android:title="Mis pedidos" />
+    <item
+        android:id="@+id/carrito_compras_cliente"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Carrito" />
+    <item
+        android:id="@+id/inicio_cliente"
+        android:icon="@drawable/ic_round_home_24"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/cuenta_cliente"
+        android:icon="@drawable/user"
+        android:title="Cuenta" />
+    <item
+        android:id="@+id/logout_cliente"
+        android:icon="@drawable/ic_logout_white_24dp"
+        android:title="Logout" />
+</menu>

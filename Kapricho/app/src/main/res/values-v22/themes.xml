@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <!-- Query Text Color -->
+        <item name="android:textColorPrimary">#ffffff</item>
+        <!-- Hint Color -->
+        <item name="android:textColorHint">#ffffff</item>
+        <!-- Icon Color -->
+        <item name="android:tint">#ffffff</item>
+        <item name="searchHintIcon">@null</item>
+    </style>
+</resources>

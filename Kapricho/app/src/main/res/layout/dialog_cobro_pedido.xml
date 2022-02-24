@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_layer"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_no_pedido_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No pedido: 0"
+        android:textColor="#fff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/tv_cliente_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cliente: Nombre Apellidoo"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Total a pagar:"
+        android:textColor="#fff"
+        android:textSize="19dp"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        />
+    <EditText
+        android:id="@+id/total_pagar_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_estyle"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:inputType="number"
+        android:ems="10"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:textColor="#F8F8F8"
+        android:textSize="19dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Medio de pago:"
+        android:textColor="#fff"
+        android:textSize="19dp"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px" />
+    <Spinner
+        android:id="@+id/medio_pago_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="36px"
+        android:layout_marginRight="36px"
+        android:layout_marginTop="5dp"
+        style="@android:style/Widget.Spinner"
+        android:background="@drawable/edittext_estyle"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:spinnerMode="dropdown"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:foregroundTint="#fff"/>
+
+    <LinearLayout
+        android:id="@+id/medio_efectivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Efectivo cliente:"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:layout_marginLeft="36px"
+            android:layout_marginRight="36px" />
+        <EditText
+            android:id="@+id/efectivo_cliente_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_estyle"
+            android:layout_marginLeft="36px"
+            android:layout_marginRight="36px"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="5dp"
+            android:textColor="#F8F8F8"
+            android:textSize="19dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="18dp">
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:textColor="@color/purple_700"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="36px"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"/>
+        <Button
+            android:id="@+id/realizar_cobro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Realizar cobro"
+            android:textColor="@color/purple_700"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="36px"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

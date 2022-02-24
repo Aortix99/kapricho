@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ver_pedido_cliente"
+        android:title="Ver pedido"/>
+    <item
+        android:id="@+id/ver_estado_cliente"
+        android:title="Estado del pedido"/>
+
+</menu>

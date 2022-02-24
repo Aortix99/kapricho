@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administrador.fragmentsEstadisticas.estadisticas_anual">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccione un año:"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/et_fecha_anual_year"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:editable="false"
+                android:inputType="none"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittext_estyle"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:paddingHorizontal="15dp"
+                android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                android:drawablePadding="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_buscar_anual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="#fff"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicler_fecha_anual"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/tv_total_recaudado_anual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total recaudado:"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/purple_500"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/et_total_recaudado_anual"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:editable="false"
+            android:inputType="none"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_estyle"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:paddingHorizontal="15dp"
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:textColorHint="#9F9F9F"
+            android:layout_marginBottom="10dp"
+            android:text="0 COP"
+            android:visibility="gone"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".cliente.fragments.carrito_cliente"
+    android:background="@drawable/background_layer">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_carrito_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/purple_500"
+            android:scrollbarStyle="insideInset"
+            app:title="Carrito de compras"
+            app:titleTextColor="@color/white"
+            app:subtitle="Productos agregados: 0"
+            app:subtitleTextColor="@color/white"
+            app:menu="@menu/menu_vaciar_carrito">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="95dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicler_carrito_de_compras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vacio_carrito_de_compras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/empty_cart"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:text="Todavía no has agregado productos al carrito"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_gravity="bottom"
+        android:background="@color/purple_200"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/text_total_a_pagar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:text="Total a pagar: $0 COP"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"/>
+
+        <Button
+            android:id="@+id/button_realizar_pedido_carrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Realizar pedido"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#E0E0E0"
+            android:textColor="#787878"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</FrameLayout>

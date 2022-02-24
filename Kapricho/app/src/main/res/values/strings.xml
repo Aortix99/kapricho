@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kapricho</string>
+    <string name="no_user">Aún no hay usuarios registrados.<br></br> Los usuarios que registres aparecerán aquí</string>
+    <string name="no_product">Aún no haz registrado ningún producto.<br></br> Los productos que registres aparecerán aquí</string>
+    <string name="no_orders">Aún no se han generado ordenes.</string>
+    <string name="tab_text_1">Diario</string>
+    <string name="tab_text_2">Mensual</string>
+    <string name="tab_text_3">Anual</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

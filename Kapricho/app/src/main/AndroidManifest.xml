@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kapricho">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".administrador.estadisticas_admin"
+            android:exported="false" />
+        <activity
+            android:name=".registro_cliente"
+            android:exported="false" />
+        <activity
+            android:name=".cocina.clases.gestion_pedidos"
+            android:exported="false" />
+        <activity
+            android:name=".cliente.MainActivity_cliente"
+            android:exported="false" />
+        <activity
+            android:name=".cocina.perfil_cocina"
+            android:exported="false" />
+        <activity
+            android:name=".cocina.pedidos_cocina"
+            android:exported="false" />
+        <activity
+            android:name=".cocina.MainActivity_cocina"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.clases.factura"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.clases.editar_producto"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.agregar_producto"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.agregar_usuario_admin"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.ordenes_admin"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.productos_admin"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.usuarios_admin"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.MainActivity_admin"
+            android:exported="false" />
+        <activity
+            android:name=".administrador.clases.editar_usuarios_admin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
